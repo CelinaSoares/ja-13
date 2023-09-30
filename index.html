@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>:: Desafio aula 13 ::</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="estiloaula13.css">
+  <link rel="stylesheet" href="normalize.css">
+</head>
+
+
+<body>
+  <header class="header">
+    <img src="Ninja_Turtles_logo_PNG2.png" alt="" class="header_logo">
+    
+    <span id= "hamburguer" class="material-symbols-outlined">
+      menu
+      </span>
+    <nav id="itens_menu" class="header_nav">
+      <ul>
+        <li><a href="#">Menu 01</a></li>
+        <li><a href="#">Menu 02</a></li>
+        <li><a href="#">Menu 03</a></li>
+        <li><a href="#">Menu 04</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    var hamburguer = document.getElementById('hamburguer');
+    var itens_menu = document.getElementById('itens_menu');
+
+    hamburguer.addEventListener('click', aparecer);
+
+    function aparecer(){
+      if(itens_menu.style.display == 'block'){
+        itens_menu.classList.remove('show');
+      }else{
+        itens_menu.classList.toggle('show');
+      }
+    }
+  </script>
+
+  <main>
+    <section class="fundo_main"></section>
+  </main>
+
+
+  <footer>
+    <div class="logos_footer">
+      <div><a href="#"><img src="facebook-2935402_1280.png" alt class="tamanho"></a></div>
+      <div><a href="#"><img src="whatsapp-2935415_1280.png" alt class="tamanho"></a></div>
+      <div><a href="#"><img src="instagram-2935404_1280.png" alt class="tamanho"></a></div>
+      <div><a href="#"><img src="youtube-2935416_1280.png" alt class="tamanho"></a></div>
+    </div>
+      
+    <p class="texto_footer">Elas na Tech / Aluna Celina Soares</p>
+  </footer>
+
+  
+</body>
+</html>
